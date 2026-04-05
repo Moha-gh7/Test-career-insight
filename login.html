@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Insights – Create Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --navy:   #0f2654;
+      --accent: #1d4ed8;
+      --bg:     #f0f4f8;
+      --white:  #ffffff;
+      --text:   #1e293b;
+      --muted:  #64748b;
+      --border: #cbd5e1;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .lang-btn {
+      position: fixed;
+      top: 16px; right: 20px;
+      font-size: 14px; font-weight: 500;
+      background: none; border: none; cursor: pointer;
+      color: var(--text);
+    }
+
+    .logo-row {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .logo-icon {
+      width: 52px; height: 52px;
+      background: var(--navy);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .logo-icon svg { width: 28px; height: 28px; color: #fff; }
+
+    .logo-name { font-size: 22px; font-weight: 700; color: var(--navy); }
+
+    .page-title { font-size: 26px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .page-sub   { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
+
+    .card {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(15,38,84,.10);
+      padding: 36px 32px;
+      width: 100%; max-width: 480px;
+    }
+
+    .field { margin-bottom: 20px; }
+
+    .field label {
+      display: block;
+      font-size: 14px; font-weight: 600;
+      color: var(--text); margin-bottom: 8px;
+    }
+
+    .input-wrap { position: relative; display: flex; align-items: center; }
+
+    .input-wrap svg {
+      position: absolute; left: 14px;
+      width: 18px; height: 18px;
+      color: var(--muted); pointer-events: none;
+    }
+
+    .input-wrap input {
+      width: 100%;
+      padding: 12px 14px 12px 42px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 15px; font-family: inherit;
+      color: var(--text); background: #f8fafc;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .input-wrap input::placeholder { color: #aab4c4; }
+
+    .input-wrap input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(29,78,216,.12);
+      background: var(--white);
+    }
+
+    .hint { font-size: 12px; color: var(--muted); margin-top: 5px; }
+
+    .btn-submit {
+      width: 100%; margin-top: 8px;
+      padding: 14px;
+      background: var(--navy); color: #fff;
+      font-size: 15px; font-weight: 600; font-family: inherit;
+      border: none; border-radius: 10px;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    .btn-submit:hover { background: #1a3a72; }
+
+    .login-row {
+      text-align: center; margin-top: 18px;
+      font-size: 14px; color: var(--muted);
+    }
+
+    .login-row a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .login-row a:hover { text-decoration: underline; }
+
+    .home-link {
+      margin-top: 20px;
+      font-size: 14px; color: var(--muted); text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="lang-btn">🌐 English</button>
+
+  <div class="logo-row">
+    <div class="logo-icon">
+      <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 3 2 9l10 6 10-6-10-6ZM6 12.5V17c0 1.657 2.686 3 6 3s6-1.343 6-3v-4.5"/>
+      </svg>
+    </div>
+    <span class="logo-name">Career Insights</span>
+  </div>
+
+  <h1 class="page-title">Create Your Account</h1>
+  <p class="page-sub">Join thousands of professionals sharing insights</p>
+
+  <div class="card">
+
+    <div class="field">
+      <label for="fullname">Full Name</label>
+      <div class="input-wrap">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 7a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 0 1 15 0"/>
+        </svg>
+        <input id="fullname" type="text" placeholder="Ahmed Mohammed"/>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="email">Email Address</label>
+      <div class="input-wrap">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5H4.5a2.25 2.25 0 0 0-2.25 2.25m19.5 0-9.75 6.75L2.25 6.75"/>
+        </svg>
+        <input id="email" type="email" placeholder="ahmed@example.com"/>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <div class="input-wrap">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M16.5 10.5V7a4.5 4.5 0 0 0-9 0v3.5M5.25 10.5h13.5A1.5 1.5 0 0 1 20.25 12v7.5A1.5 1.5 0 0 1 18.75 21H5.25A1.5 1.5 0 0 1 3.75 19.5V12a1.5 1.5 0 0 1 1.5-1.5Z"/>
+        </svg>
+        <input id="password" type="password" placeholder="••••••••"/>
+      </div>
+      <p class="hint">Minimum 6 characters</p>
+    </div>
+
+    <div class="field">
+      <label for="confirm">Confirm Password</label>
+      <div class="input-wrap">
+        <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M16.5 10.5V7a4.5 4.5 0 0 0-9 0v3.5M5.25 10.5h13.5A1.5 1.5 0 0 1 20.25 12v7.5A1.5 1.5 0 0 1 18.75 21H5.25A1.5 1.5 0 0 1 3.75 19.5V12a1.5 1.5 0 0 1 1.5-1.5Z"/>
+        </svg>
+        <input id="confirm" type="password" placeholder="••••••••"/>
+      </div>
+    </div>
+
+    <button class="btn-submit">Create Account</button>
+
+    <p class="login-row">
+      Already have an account? <a href="#">Login</a>
+    </p>
+  </div>
+
+  <a href="#" class="home-link">← Home</a>
+
+</body>
+</html>
